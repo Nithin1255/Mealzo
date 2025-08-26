@@ -3,6 +3,7 @@ const dotEnv = require("dotenv");
 const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 const path = require('path');
+const dotEnv = require('dot-env');
 
 const vendorRoutes = require('./routes/vendorRoutes');
 const firmRoutes = require('./routes/firmRoutes');
@@ -11,7 +12,7 @@ const productRoutes = require('./routes/productRoutes');
 
 const app = express();
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 dotEnv.config();
 
