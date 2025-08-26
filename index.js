@@ -3,7 +3,6 @@ const dotEnv = require("dotenv");
 const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 const path = require('path');
-const dotEnv = require('dot-env');
 
 const vendorRoutes = require('./routes/vendorRoutes');
 const firmRoutes = require('./routes/firmRoutes');
